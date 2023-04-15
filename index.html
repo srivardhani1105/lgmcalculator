@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div >
+                    <input id="clear" type="text" class="display" name="dis">
+                </div>
+                <div>
+                    <input type="button"  value="AC" onclick="allClear()">  
+                    <input type="button" value="DE" onclick="show()">  
+                    <input type="button" value="." onclick="print('.')">  
+                    <input type="button" value="/" onclick="print('/')">              
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="print('7')">  
+                    <input type ="button" value="8" onclick="print('8')"> 
+                    <input type="button" value="9" onclick="print('9')">  
+                    <input type="button" value="*" onclick="print('*')">              
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="print('4')">  
+                    <input type="button" value="5" onclick="print('5')">  
+                    <input type="button" value="6" onclick="print('6')">  
+                    <input type="button" value="-" onclick="print('-')">              
+                </div> 
+                <div>
+                    <input type="button" value="1" onclick="print('1')">  
+                    <input type="button" value="2" onclick="print('2')">  
+                    <input type="button" value="3" onclick="print('3')">  
+                    <input type="button" value="+" onclick="print('+')">              
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="print('00')">  
+                    <input type="button" value="0" onclick="print('0')">  
+                    <input type="button" value="=" class="add" onclick="calc()">              
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
